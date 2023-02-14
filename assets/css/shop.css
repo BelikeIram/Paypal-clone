@@ -1,0 +1,224 @@
+/* .shop_now-body{
+    margin-top: -12px;
+} */
+.shop_now-hero{
+    position: relative;
+}
+.hero-bg{
+    background: url('/assets/img/shopping-banners-desktop.gif');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    background-position: 100% 50%;
+}
+
+.hero-bg-mob{
+    display: none;
+    background: url('/assets/img/shopping-banners-mobile.gif');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.hero-left-content{
+    width: 50%;
+    position: absolute;
+    left:6%;
+    top: 32%;
+    color: #ffffff; 
+}
+
+.hero-left-content p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.store-list-item{
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.store-list-item .heading{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2.4rem;
+}
+.select-item{
+    padding-bottom: 2.4rem;
+}
+.select-item ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding-left: 0;
+}
+.select-item ul li{
+    display:flex;
+    justify-content: space-between;
+    width: 260px;
+    border-radius: 4px;
+
+}
+
+.select-item ul li:nth-child(1){
+    margin-right: 4rem;
+}
+
+.select-drop{
+    line-height: 20px;
+    width: 70%;
+    flex: 1;
+    position: relative;
+    padding: 0.2rem 1rem 0.2rem 0.8rem;
+    border: 1px solid #b4b2b2;
+}
+
+.select-drop i{
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    color: #3b3a3a;
+    font-size: 20px;
+}
+
+.select-drop .select{
+    border: none;
+    font-size: 1rem;
+    color: #000000d9;
+    appearance: none;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+.select-drop label{
+    display:block;
+    text-align: start;
+    font-size: 0.9rem;
+    color: #808080d6;
+}
+
+.go-btn{
+    width: 19%;
+    float: right;
+    vertical-align: middle;
+    line-height: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-bottom-right-radius: 3px;
+    background-color: #0070ba;
+    border-radius: 0 4px 4px 0;
+}
+
+.go-btn:hover{
+    color: #ffffff;
+}
+.brand__names{
+    margin-top: 5rem;
+}
+.brand__names .list-of-brands  > div{
+    position: relative;
+}
+.brand__names .list-of-brands{
+    row-gap: 3.4rem;
+}
+.col-img{
+    text-align: center;
+    width: 200px;
+    margin: auto;   
+}
+.col-img img{
+    max-width: 65%;
+}
+.brand a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.carousel-btns{
+    height: 20vw;
+    position: absolute;
+    width: 100%;
+}
+.carousel-control-prev i, .carousel-control-next i{
+    font-size: 3rem;
+    color: black;
+}
+span.num-pagination{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color:#474545;
+    position: absolute;
+    left: 50%;
+    top: 39%;
+}
+.mob-tab-view-brands{
+    display: none;
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-all 0.35s ease;
+    transition: all 0.35s ease;
+    transition: all 0.35s ease, -webkit-all 0.35s ease;
+  }
+
+
+  
+@media screen and (max-width : 1200px) and (min-width : 750px){
+    .footer-main > div{
+        justify-content: center;
+    }
+    .footer-main > div ul{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-query-center{
+        border-bottom: 0;
+    }
+    ul.footer-query{
+        order: 2;
+    }
+    .footer-details p{
+        text-align: center;
+    }
+}
+@media screen and (max-width : 750px) {
+    .hero-left-content{
+        width: auto;
+        text-align: center;
+    }
+    .hero-left-content h1{
+        width: 90%;
+    }
+    .hero-left-content p{
+        display: none;
+    }
+    .hero-bg{
+        display: none;
+    }
+    .hero-bg-mob{
+        display: block;
+        height: 560px;
+    }
+    .hero-left-content a{
+        display: none;
+    }
+    .select-item{
+        max-width: 400px;
+        margin: auto
+    }
+        .select-item ul li:nth-child(1){
+        margin-bottom:1rem;
+        margin-right: 0;
+    }
+    .brand__names .list-of-brands{
+        display: none;
+    }
+    .mob-tab-view-brands{
+        display: block;
+    }
+
+}
